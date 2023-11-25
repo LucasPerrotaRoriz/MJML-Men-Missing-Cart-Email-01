@@ -36,14 +36,11 @@
 	<![endif]-->
 
 	<style type="text/css" media="screen">
-		/* What it does: Tells the email client that both light and dark styles are provided. A duplicate of meta color-scheme meta tag above. */
         :root {
 			color-scheme: light dark;
 			supported-color-schemes: light dark;
 		}
-
-		  /* What it does: Remove spaces around the email design added by some email clients. */
-		  /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+		
 		html,
 		body {
 			margin: 0 auto !important;
@@ -52,18 +49,15 @@
 			width: 100% !important;
 		}
 
-		/* What it does: Stops email clients resizing small text. */
 		* {
 			-ms-text-size-adjust: 100%;
 			-webkit-text-size-adjust: 100%;
 		}
 
-		/* What it does: Centers email on Android 4.4 */
 		div[style*="margin: 16px 0"] {
 			margin: 0 !important;
 		}
 
-		/* What it does: forces Samsung Android mail clients to use the entire viewport */
 		#MessageViewBody, #MessageWebViewDiv{
 			width: 100% !important;
 		}
@@ -78,30 +72,25 @@
 		padding: 0 !important;
 		}
 
-		/* What it does: Stops Outlook from adding extra spacing to tables. */
 		table,
 		td {
 			mso-table-lspace: 0pt !important;
 			mso-table-rspace: 0pt !important;
 		}
 
-		/* What it does: Replaces default bold style. */
 		th {
 			font-weight: normal;
 		}
 
-		/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
 		a {
 			text-decoration: none;
 		}
 
-		/* What it does: Uses a better rendering method when resizing images in IE. */
 		img {
 			-ms-interpolation-mode:bicubic;
 		}
 
-		/* What it does: A work-around for email clients meddling in triggered links. */
-		a[x-apple-data-detectors],  /* iOS */
+		a[x-apple-data-detectors], 
 		.unstyle-auto-detected-links a,
 		.aBn {
 			border-bottom: 0 !important;
@@ -114,27 +103,22 @@
 			line-height: inherit !important;
 		}
 
-		/* What it does: Prevents Gmail from changing the text color in conversation threads. */
 		.im {
 			color: inherit !important;
 		}
 
-		/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
 		.a6S {
 			display: none !important;
 			opacity: 0.01 !important;
 		}
-		/* If the above doesn't work, add a .g-img class to any image in question. */
+        
 		img.g-img + div {
 			display: none !important;
 		}
 
-		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-		/* Create one of these media queries for each additional viewport size you'd like to fix */
 
 		.mcnPreviewText { display: none !important; }
 		
-		/* Mobile styles */
 		@media only screen and (max-device-width:480px), only screen and (max-width:480px) {
 			.mobile-shell { width: 100% !important; min-width: 100% !important; }
 			
@@ -253,19 +237,16 @@
             }
 		}
 
-		 /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
 		@media only screen and (min-device-width:320px) and (max-device-width:374px) {
             u ~ div .email-container {
                 min-width: 320px !important;
             }
         }
-        /* iPhone 6, 6S, 7, 8, and X */
         @media only screen and (min-device-width:375px) and (max-device-width:413px) {
             u ~ div .email-container {
                 min-width: 375px !important;
             }
         }
-        /* iPhone 6+, 7+, and 8+ */
         @media only screen and (min-device-width:414px) {
             u ~ div .email-container {
                 min-width: 414px !important;
@@ -442,7 +423,6 @@
                                 </tr>
                             </table>
                             <!-- Header : END-->
-
                             <!-- Home : BEGIN -->
                             <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
@@ -508,7 +488,6 @@
                                 </tr>
                             </table>
                             <!-- Home : END -->
-
                             <!-- Items Row 1 : BEGIN -->
                             <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
@@ -636,7 +615,6 @@
                                 </tr>
                             </table>
                             <!-- Items Row 1 : END -->
-
                             <!-- Items Row 2 : BEGIN -->
                             <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                 <tr>
@@ -746,7 +724,6 @@
                                 </tr>
                             </table>
                             <!-- Items Row 2 : BEGIN -->
-
                             <!-- Invoice : BEGIN -->
                             <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#546c78" style="border-radius: 10px;">
                                 <tr>
@@ -850,6 +827,109 @@
                                 <!--Button : END -->
                             </table>
                             <!-- Invoice : BEGIN -->
+                            <!-- Collections : BEGIN -->
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <!-- Heading : BEGIN -->
+                                <tr>
+                                    <td align="center" style="padding: 40px 0;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="font-family: 'Montserrat', Arial, sans-serif;  text-align: center; line-height: 22px; padding-bottom: 20px; color: #ff6a54;">
+                                                    <p style="font-size: 20px; line-height: 22px;">
+                                                        Fashion Collection
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: 'Montserrat', Arial, sans-serif;  text-align: center; line-height: 22px; padding-bottom: 20px; color: #546c78;">
+                                                    <h2 style="font-size: 38px; line-height: 40px;">
+                                                        Featured Categories
+                                                    </h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-family: 'Montserrat', Arial, sans-serif; text-align: center; line-height: 22px; color: #95a1a2;">
+                                                    <p style="font-size: 14px;">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Heading : END -->
+                                <!-- Image : BEGIN -->
+                                <tr>
+                                    <td style="padding: 10px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <!-- Left Column : BEGIN -->
+                                                <th class="column" width="190" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td class="cetner m-center" style="font-size: 0pt; line-height: 0pt; text-align: left;">
+                                                                <img src="https://github.com/LucasPerrotaRoriz/Men-Missing-Cart-Email-01/blob/main/img/Multi_image_left_1.png?raw=true" 
+                                                                width="190" height="190" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                        <!-- Clear Spacer : BEGIN -->
+                                                        <tr><td aria-hidden="true" height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                        <!-- Clear Spacer : END -->
+                                                        <tr>
+                                                            <td class="cetner m-center" style="font-size: 0pt; line-height: 0pt; text-align: left;">
+                                                                <img src="https://github.com/LucasPerrotaRoriz/Men-Missing-Cart-Email-01/blob/main/img/Multi_image_left_2.png?raw=true" 
+                                                                width="190" height="190" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <!-- Left Column : END -->
+                                                <th class="column-empty2" width="10" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;"></th>
+                                                <!-- Middle Column : BEGIN -->
+                                                <th class="column" width="190" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td class="cetner m-center" style="font-size: 0pt; line-height: 0pt; text-align: left;">
+                                                                <img src="https://github.com/LucasPerrotaRoriz/Men-Missing-Cart-Email-01/blob/main/img/middle_image.png?raw=true" 
+                                                                width="190" height="392" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <!-- Middle Column : END -->
+                                                <th class="column-empty2" width="10" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;"></th>
+                                                <!-- Right Column : BEGIN -->
+                                                <th class="column" width="190" style="font-size: 0pt; font-weight: normal; line-height: 0pt; margin: 0; padding: 0;">
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td class="cetner m-center" style="font-size: 0pt; line-height: 0pt; text-align: left;">
+                                                                <img src="https://github.com/LucasPerrotaRoriz/Men-Missing-Cart-Email-01/blob/main/img/Multi_image_right_1.png?raw=true" 
+                                                                width="190" height="190" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                        <!-- Clear Spacer : BEGIN -->
+                                                        <tr><td aria-hidden="true" height="10" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                                        <!-- Clear Spacer : END -->
+                                                        <tr>
+                                                            <td class="cetner m-center" style="font-size: 0pt; line-height: 0pt; text-align: left;">
+                                                                <img src="https://github.com/LucasPerrotaRoriz/Men-Missing-Cart-Email-01/blob/main/img/Multi_image_right_2.png?raw=true" 
+                                                                width="190" height="190" border="0" alt="">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </th>
+                                                <!-- Right Column : END -->
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Image : END -->
+                                <!-- Clear Spacer : BEGIN -->
+                                <tr><td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">&nbsp;</td></tr>
+                                <!-- Clear Spacer : END -->
+                            </table>
+                            <!-- Collections : END -->
+                           
                         </td>
                     </tr>
                 </table>
